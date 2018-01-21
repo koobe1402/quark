@@ -1,0 +1,8 @@
+# Config options for vfio-pci module. The foolowing device will be stubbed with VFIO driver
+
+# 10de:1b06 -> VGA compatible controller [0300]: NVIDIA Corporation GP102 [GeForce GTX 1080 Ti] [10de:1b06] (rev a1)
+# 10de:10ef -> Audio device [0403]: NVIDIA Corporation GP102 HDMI Audio Controller [10de:10ef] (rev a1)
+# 1022:145c -> USB controller [0c03]: Advanced Micro Devices, Inc. [AMD] USB3 Host Controller [1022:145c]
+# 1022:1457 -> Audio device [0403]: Advanced Micro Devices, Inc. [AMD] Device [1022:1457]
+
+options vfio-pci ids=10de:1b06,10de:10ef,1022:145c,1022:1457
