@@ -18,6 +18,7 @@ apt install -y wireless-tools \
                bridge-utils   \
                hugepages      \
                qemu-utils     \
-               ovmf
+               ovmf           \
+               xfsprogs
 
 
