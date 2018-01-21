@@ -2,7 +2,7 @@
 
 set -uexo pipefail
 
-install --owner root --group root --mode 0644 ../files/vfio/default_grub_config /etc/defaul/grub
+install --owner root --group root --mode 0644 ../files/vfio/default_grub_config /etc/default/grub
 
 install --owner root --group root --mode 0644 ../files/vfio/modprobe_options /old_disk/etc/modprobe.d/vfio.conf
 
