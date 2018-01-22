@@ -2,6 +2,7 @@
 
 set -uexo pipefail
 
+# Create directories and configure fstab
 if [ ! -d "/data" ]; then
   mkdir /data
 fi
