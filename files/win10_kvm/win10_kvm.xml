@@ -44,7 +44,7 @@
     <emulator>/usr/bin/kvm-spice</emulator>
     <disk type='file' device='disk'>
       <driver name='qemu' type='qcow2'/>
-      <source file='/data/win10/win10.qcow2'/>
+      <source file='/data/win10/disks/win10.qcow2'/>
       <target dev='hda' bus='ide'/>
       <address type='drive' controller='0' bus='0' target='0' unit='0'/>
     </disk>
@@ -112,4 +112,3 @@
     </memballoon>
   </devices>
 </domain>
-
