@@ -14,6 +14,10 @@ install --owner root --group root --mode 0600 ../files/win10_kvm/qemu.conf /etc/
 # Set up Libvirt to use Huge Pages 
 install --owner root --group root --mode 0644 ../files/win10_kvm/qemu-kvm /etc/default/qemu-kvm
 
+# Disable CPU frequency scaling
+install --owner root --group root --mode 0644 ../files/vfio/cpufrequtils /etc/default/cpufrequtils
+systemctl disable ondemand.service
+
 # This is not working!!!
 cat >> /etc/apparmor.d/abstractions/libvirt-qemu <<EOF
   /var/lib/libvirt/images/** r,

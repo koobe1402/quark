@@ -19,6 +19,7 @@ apt install -y wireless-tools \
                hugepages      \
                qemu-utils     \
                ovmf           \
-               xfsprogs
+               xfsprogs       \
+               cpufrequtils
 
 
