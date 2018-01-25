@@ -8,7 +8,7 @@ GRUB_DEFAULT=0
 GRUB_HIDDEN_TIMEOUT_QUIET=true
 GRUB_TIMEOUT=2
 GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash video=efifb:off amd_iommu=on pcie_acs_override=downstream,multifunction"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash video=efifb:off amd_iommu=on pcie_acs_override=downstream,multifunction  default_hugepagesz=1G hugepagesz=1G hugepages=8192 transparent_hugepage=never"
 GRUB_CMDLINE_LINUX=""
 
 # Uncomment to enable BadRAM filtering, modify to suit your needs

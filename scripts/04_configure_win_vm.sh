@@ -11,6 +11,9 @@ install --owner root --group root --mode 0600 ../files/win10_kvm/vga.rom /data/w
 # Configure qemu
 install --owner root --group root --mode 0600 ../files/win10_kvm/qemu.conf /etc/libvirt/qemu.conf
 
+# Set up Libvirt to use Huge Pages 
+install --owner root --group root --mode 0644 ../files/win10_kvm/qemu-kvm /etc/default/qemu-kvm
+
 # This is not working!!!
 cat >> /etc/apparmor.d/abstractions/libvirt-qemu <<EOF
   /var/lib/libvirt/images/** r,

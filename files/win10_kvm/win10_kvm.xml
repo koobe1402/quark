@@ -14,6 +14,12 @@
     <vcpupin vcpu='6' cpuset='14'/>
     <vcpupin vcpu='7' cpuset='15'/>
   </cputune>
+  <resource>
+    <partition>/machine</partition>
+  </resource>
+  <memoryBacking>
+    <hugepages/>
+  </memoryBacking>
   <os>
     <type arch='x86_64' machine='pc-i440fx-2.9'>hvm</type>
     <loader readonly='yes' type='pflash'>/usr/share/OVMF/OVMF_CODE.fd</loader>
